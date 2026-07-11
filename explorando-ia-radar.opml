@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="2.0">
+  <head>
+    <title>Curadoria IA — Rico</title>
+    <ownerName>Rico</ownerName>
+    <dateCreated>Sat, 11 Jul 2026 00:00:00 GMT</dateCreated>
+  </head>
+  <body>
+    <outline text="IA — Repositorios &amp; Papers" title="IA — Repositorios &amp; Papers">
+      <outline type="rss" text="arXiv cs.AI (Inteligencia Artificial)" title="arXiv cs.AI" xmlUrl="http://export.arxiv.org/rss/cs.AI" htmlUrl="https://arxiv.org/list/cs.AI/recent"/>
+      <outline type="rss" text="arXiv cs.LG (Machine Learning)" title="arXiv cs.LG" xmlUrl="http://export.arxiv.org/rss/cs.LG" htmlUrl="https://arxiv.org/list/cs.LG/recent"/>
+      <outline type="rss" text="arXiv cs.CL (NLP / Linguagem)" title="arXiv cs.CL" xmlUrl="http://export.arxiv.org/rss/cs.CL" htmlUrl="https://arxiv.org/list/cs.CL/recent"/>
+    </outline>
+    <outline text="IA — Portais &amp; Noticias" title="IA — Portais &amp; Noticias">
+      <outline type="rss" text="The Decoder" title="The Decoder" xmlUrl="https://the-decoder.com/feed/" htmlUrl="https://the-decoder.com"/>
+      <outline type="rss" text="VentureBeat AI" title="VentureBeat AI" xmlUrl="https://venturebeat.com/category/ai/feed/" htmlUrl="https://venturebeat.com/category/ai"/>
+      <outline type="rss" text="MIT Technology Review — AI" title="MIT Technology Review AI" xmlUrl="https://www.technologyreview.com/topic/artificial-intelligence/feed" htmlUrl="https://www.technologyreview.com/topic/artificial-intelligence"/>
+      <outline type="rss" text="TechCrunch — AI" title="TechCrunch AI" xmlUrl="https://techcrunch.com/category/artificial-intelligence/feed/" htmlUrl="https://techcrunch.com/category/artificial-intelligence"/>
+      <outline type="rss" text="MarkTechPost" title="MarkTechPost" xmlUrl="https://www.marktechpost.com/feed/" htmlUrl="https://www.marktechpost.com"/>
+      <outline type="rss" text="ScienceDaily — AI" title="ScienceDaily AI" xmlUrl="https://www.sciencedaily.com/rss/computers_math/artificial_intelligence.xml" htmlUrl="https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"/>
+    </outline>
+    <outline text="IA — Blogs (labs &amp; pesquisadores)" title="IA — Blogs (labs &amp; pesquisadores)">
+      <outline type="rss" text="Explorando IA (seu blog)" title="Explorando IA" xmlUrl="https://explorandoia.substack.com/feed" htmlUrl="https://explorandoia.substack.com"/>
+      <outline type="rss" text="OpenAI" title="OpenAI" xmlUrl="https://openai.com/news/rss.xml" htmlUrl="https://openai.com/news"/>
+      <outline type="rss" text="Google DeepMind" title="Google DeepMind" xmlUrl="https://deepmind.google/blog/rss.xml" htmlUrl="https://deepmind.google/discover/blog"/>
+      <outline type="rss" text="Hugging Face Blog" title="Hugging Face Blog" xmlUrl="https://huggingface.co/blog/feed.xml" htmlUrl="https://huggingface.co/blog"/>
+      <outline type="rss" text="Lil'Log (Lilian Weng)" title="Lil'Log" xmlUrl="https://lilianweng.github.io/index.xml" htmlUrl="https://lilianweng.github.io"/>
+      <outline type="rss" text="Andrej Karpathy" title="Andrej Karpathy" xmlUrl="https://karpathy.github.io/feed.xml" htmlUrl="https://karpathy.github.io"/>
+      <outline type="rss" text="BAIR — Berkeley AI Research" title="BAIR Blog" xmlUrl="https://bair.berkeley.edu/blog/feed.xml" htmlUrl="https://bair.berkeley.edu/blog"/>
+      <outline type="rss" text="Import AI (Jack Clark)" title="Import AI" xmlUrl="https://importai.substack.com/feed" htmlUrl="https://importai.substack.com"/>
+      <outline type="rss" text="Towards Data Science" title="Towards Data Science" xmlUrl="https://towardsdatascience.com/feed" htmlUrl="https://towardsdatascience.com"/>
+    </outline>
+  </body>
+</opml>
