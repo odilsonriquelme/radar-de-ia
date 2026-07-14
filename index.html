@@ -138,6 +138,7 @@
     --line:rgba(255,255,255,.08); --line-strong:rgba(255,255,255,.14);
     --ink:#EAEEF5; --muted:#8B96A9; --faint:#5C6678;
     --repo:#5FD0C6; --news:#F2B14E; --blog:#A99BEF;
+    --insta:#F2789F; --x:#58A6FF;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -230,6 +231,8 @@
   .r-repo .sec-title,.r-repo .sec-code b{color:var(--repo)}
   .r-news .sec-title,.r-news .sec-code b{color:var(--news)}
   .r-blog .sec-title,.r-blog .sec-code b{color:var(--blog)}
+  .r-insta .sec-title,.r-insta .sec-code b{color:var(--insta)}
+  .r-x .sec-title,.r-x .sec-code b{color:var(--x)}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
 
   /* ---------- card ---------- */
@@ -331,8 +334,8 @@
     </div>
 
     <div class="spec">
-      <div class="stat"><b>21</b><span>Fontes</span></div>
-      <div class="stat"><b>03</b><span>Categorias</span></div>
+      <div class="stat"><b>43</b><span>Fontes</span></div>
+      <div class="stat"><b>05</b><span>Categorias</span></div>
       <div class="stat"><b>18</b><span>Com RSS</span></div>
       <div class="legend">
         <span class="li"><span class="dot f"></span> contínua</span>
@@ -367,7 +370,7 @@
     </div>
     <p class="foot-note">
       Uma criação <b>Explorando IA</b> · 2026 · Grátis para os leitores.<br>
-      Fontes marcadas “sem RSS” (Anthropic, The Batch, The Rundown) são acompanhadas por site ou e-mail · o botão <b>Baixar a lista</b> importa todas de uma vez no seu leitor de RSS.
+      Repositórios, portais e blogs marcados “sem RSS” são acompanhados por site ou e-mail · o botão <b>Baixar a lista</b> importa os feeds de uma vez no seu leitor de RSS · as contas de <b>Instagram</b> e <b>X</b> abrem direto no perfil (redes sociais não têm RSS).
     </p>
   </footer>
 </div>
@@ -429,6 +432,52 @@ const DATA = [
      desc:"Newsletter semanal em categoria própria, com leitura estratégica do cenário."},
     {name:"Towards Data Science", url:"https://towardsdatascience.com", cad:"diaria",
      desc:"Uma das maiores publicações do Medium: de tutoriais 101 a explicações de papers."}
+  ]},
+  { cat:"insta", code:"04", title:"Instagram · Contas de IA", accent:"var(--insta)", items:[
+    {name:"Explorando IA", url:"https://www.instagram.com/explorandoiaoficial/", cad:"tres", own:true, ownText:"sua conta",
+     desc:"A sua conta oficial: IA explicada de forma simples, prática e direta, direto no feed do seu público brasileiro."},
+    {name:"OpenAI", url:"https://www.instagram.com/openai/", cad:"diaria",
+     desc:"A conta oficial de quem faz o ChatGPT, o Sora e o DALL·E — lançamentos e bastidores em formato visual."},
+    {name:"ChatGPT", url:"https://www.instagram.com/chatgpt/", cad:"diaria",
+     desc:"A conta do produto mais popular de IA do mundo: usos, novidades e cultura em torno do ChatGPT."},
+    {name:"Google DeepMind", url:"https://www.instagram.com/googledeepmind/", cad:"diaria",
+     desc:"O laboratório de IA do Google (Gemini, AlphaFold) traduzindo ciência de ponta em posts acessíveis."},
+    {name:"NVIDIA AI", url:"https://www.instagram.com/nvidiaai/", cad:"diaria",
+     desc:"O braço de IA da NVIDIA: hardware, modelos e demos de quem fornece o motor do setor."},
+    {name:"Meta AI", url:"https://www.instagram.com/meta/", cad:"diaria",
+     desc:"A casa do Llama e do Meta AI — atualizações de IA aberta e integrações nas plataformas Meta."},
+    {name:"Microsoft", url:"https://www.instagram.com/microsoft/", cad:"diaria",
+     desc:"Onde acompanhar o Copilot e a IA aplicada ao trabalho, com foco em produtividade."},
+    {name:"Adobe", url:"https://www.instagram.com/adobe/", cad:"diaria",
+     desc:"IA criativa na prática: Firefly e recursos generativos aplicados a design e imagem."},
+    {name:"Marques Brownlee", url:"https://www.instagram.com/mkbhd/", cad:"diaria",
+     desc:"O maior nome de tecnologia no YouTube, com reviews e leituras afiadas sobre produtos de IA."},
+    {name:"Lex Fridman", url:"https://www.instagram.com/lexfridman/", cad:"diaria",
+     desc:"Cortes e bastidores do podcast que entrevista os principais nomes da IA no mundo."}
+  ]},
+  { cat:"x", code:"05", title:"X · Contas de IA", accent:"var(--x)", items:[
+    {name:"@explorando_ia", url:"https://x.com/explorando_ia", cad:"tres", own:true, ownText:"sua conta",
+     desc:"O seu perfil no X: IA descomplicada, ideias e tendências pro público brasileiro em tempo real."},
+    {name:"OpenAI", url:"https://x.com/OpenAI", cad:"diaria",
+     desc:"Anúncios e lançamentos oficiais primeiro na fonte — ChatGPT, novos modelos e pesquisa."},
+    {name:"Google DeepMind", url:"https://x.com/GoogleDeepMind", cad:"diaria",
+     desc:"Pesquisa, Gemini e avanços científicos do laboratório de IA do Google, em primeira mão."},
+    {name:"Anthropic", url:"https://x.com/AnthropicAI", cad:"diaria",
+     desc:"Novidades da família Claude e pesquisa de segurança/alinhamento direto do laboratório."},
+    {name:"Andrej Karpathy", url:"https://x.com/karpathy", cad:"semanal",
+     desc:"O pensamento mais claro sobre LLMs e deep learning — quando ele posta, vale ler."},
+    {name:"Yann LeCun", url:"https://x.com/ylecun", cad:"diaria",
+     desc:"Cientista-chefe de IA da Meta e voz influente (e provocadora) nos debates sobre arquitetura."},
+    {name:"Andrew Ng", url:"https://x.com/AndrewYNg", cad:"diaria",
+     desc:"Educador de referência: IA aplicada, ML prático e leitura de negócios com sinal alto."},
+    {name:"Fei-Fei Li", url:"https://x.com/drfeifei", cad:"semanal",
+     desc:"Pioneira da visão computacional (ImageNet) e da IA centrada no ser humano, em Stanford."},
+    {name:"Demis Hassabis", url:"https://x.com/demishassabis", cad:"semanal",
+     desc:"CEO do Google DeepMind e Nobel de Química — visão de fronteira sobre o caminho à AGI."},
+    {name:"Rowan Cheung", url:"https://x.com/rowancheung", cad:"diaria",
+     desc:"Fundador do The Rundown: curadoria rápida do que importa no dia a dia da IA."},
+    {name:"Ethan Mollick", url:"https://x.com/emollick", cad:"diaria",
+     desc:"Professor de Wharton com o melhor comentário sobre \\\"o que isso muda\\\" no trabalho e na educação."}
   ]}
 ];
 
@@ -460,7 +509,7 @@ DATA.forEach(sec=>{
       <h3 class="name">${it.name}</h3>
       <p class="desc">${it.desc}</p>
       <div class="foot">
-        ${it.own ? '<span class="own">seu blog</span>' : ''}
+        ${it.own ? '<span class="own">'+(it.ownText||'seu blog')+'</span>' : ''}
         ${it.noRss ? '<span class="norss">sem RSS</span>' : ''}
         <span class="open">Abrir <span class="arw">→</span></span>
       </div>`;
