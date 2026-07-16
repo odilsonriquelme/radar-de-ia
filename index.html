@@ -138,7 +138,7 @@
     --line:rgba(255,255,255,.08); --line-strong:rgba(255,255,255,.14);
     --ink:#EAEEF5; --muted:#8B96A9; --faint:#5C6678;
     --repo:#5FD0C6; --news:#F2B14E; --blog:#A99BEF;
-    --insta:#F2789F; --x:#58A6FF;
+    --insta:#F2789F; --x:#58A6FF; --yt:#FF6B6B;
   }
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -233,6 +233,7 @@
   .r-blog .sec-title,.r-blog .sec-code b{color:var(--blog)}
   .r-insta .sec-title,.r-insta .sec-code b{color:var(--insta)}
   .r-x .sec-title,.r-x .sec-code b{color:var(--x)}
+  .r-yt .sec-title,.r-yt .sec-code b{color:var(--yt)}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
 
   /* ---------- card ---------- */
@@ -334,8 +335,8 @@
     </div>
 
     <div class="spec">
-      <div class="stat"><b>43</b><span>Fontes</span></div>
-      <div class="stat"><b>05</b><span>Categorias</span></div>
+      <div class="stat"><b>53</b><span>Fontes</span></div>
+      <div class="stat"><b>06</b><span>Categorias</span></div>
       <div class="stat"><b>18</b><span>Com RSS</span></div>
       <div class="legend">
         <span class="li"><span class="dot f"></span> contínua</span>
@@ -370,7 +371,7 @@
     </div>
     <p class="foot-note">
       Uma criação <b>Explorando IA</b> · 2026 · Grátis para os leitores.<br>
-      Repositórios, portais e blogs marcados “sem RSS” são acompanhados por site ou e-mail · o botão <b>Baixar a lista</b> importa os feeds de uma vez no seu leitor de RSS · as contas de <b>Instagram</b> e <b>X</b> abrem direto no perfil (redes sociais não têm RSS).
+      Repositórios, portais e blogs marcados “sem RSS” são acompanhados por site ou e-mail · o botão <b>Baixar a lista</b> importa os feeds de uma vez no seu leitor de RSS · as contas de <b>Instagram</b> e <b>X</b> e os canais do <b>YouTube</b> abrem direto no perfil.
     </p>
   </footer>
 </div>
@@ -478,6 +479,28 @@ const DATA = [
      desc:"Fundador do The Rundown: curadoria rápida do que importa no dia a dia da IA."},
     {name:"Ethan Mollick", url:"https://x.com/emollick", cad:"diaria",
      desc:"Professor de Wharton com o melhor comentário sobre \\\"o que isso muda\\\" no trabalho e na educação."}
+  ]},
+  { cat:"yt", code:"06", title:"YouTube · Canais de IA", accent:"var(--yt)", items:[
+    {name:"Two Minute Papers", url:"https://www.youtube.com/@TwoMinutePapers", cad:"semanal",
+     desc:"Resumos animados de papers de ponta em ~5 min: pega o essencial da pesquisa sem ler o artigo inteiro."},
+    {name:"Fireship", url:"https://www.youtube.com/@Fireship", cad:"diaria",
+     desc:"Vídeos rápidos e afiados que destrincham cada novo modelo no mesmo dia, com código e visão honesta."},
+    {name:"Matt Wolfe", url:"https://www.youtube.com/@mreflow", cad:"diaria",
+     desc:"O canal mais fácil pra acompanhar ferramentas e novidades de IA, com demos práticas toda semana."},
+    {name:"Matthew Berman", url:"https://www.youtube.com/@matthew_berman", cad:"diaria",
+     desc:"Tutoriais, testes de modelos e walkthroughs de open-source pra quem quer colocar a mão na massa."},
+    {name:"Lex Fridman", url:"https://www.youtube.com/@lexfridman", cad:"semanal",
+     desc:"As entrevistas long-form de referência com os principais nomes que constroem e pesquisam IA no mundo."},
+    {name:"3Blue1Brown", url:"https://www.youtube.com/@3blue1brown", cad:"semanal",
+     desc:"As melhores explicações visuais de redes neurais e da matemática por trás do deep learning."},
+    {name:"Andrej Karpathy", url:"https://www.youtube.com/@AndrejKarpathy", cad:"semanal",
+     desc:"Aulas do zero (construir um LLM na unha) e intuição de primeiríssima qualidade sobre como a IA funciona."},
+    {name:"Google DeepMind", url:"https://www.youtube.com/@GoogleDeepMind", cad:"semanal",
+     desc:"O canal oficial do laboratório: pesquisa, ciência e bastidores de Gemini, AlphaFold e cia."},
+    {name:"DeepLearning.AI", url:"https://www.youtube.com/@Deeplearningai", cad:"semanal",
+     desc:"O canal do Andrew Ng: cursos, fundamentos e IA aplicada explicados com clareza didática."},
+    {name:"Yannic Kilcher", url:"https://www.youtube.com/@YannicKilcher", cad:"semanal",
+     desc:"Análise técnica e profunda de papers de ML pra quem quer acompanhar a literatura sem se afogar nela."}
   ]}
 ];
 
